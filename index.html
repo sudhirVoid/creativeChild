@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Child</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="images/favicon.png" rel="icon"/>
+</head>
+<body>
+    <div>
+        <div class="cardHeading">
+            <div style="display: flex; justify-content: center;">
+                <p id="topHeading">Solve Being Curious</p>
+            <p id = 'emojiSection'>🤔</p>
+            </div>
+            <div id="scoreCoutnerDiv">
+                <p id="noOfQuestionSolvedTracker"></p>
+            </div>
+        </div>
+        <div class="questionCard" id="questionCardId">
+            <div class="questionSectionDiv">
+                <div class="questionTitle">
+                    <p id="questionText">Question Title</p>
+                </div>
+                <div class="option">
+                    <input type="radio" id="option1" onclick="radioClicked('optionLabel1')" name="options">
+                    <label for="option1" id="optionLabel1">Option 1</label>
+                  </div>
+                  
+                  <div class="option">
+                    <input type="radio" id="option2" onclick="radioClicked('optionLabel2')"  name="options">
+                    <label for="option2" id="optionLabel2">Option 2</label>
+                  </div>
+                  
+                  <div class="option">
+                    <input type="radio" id="option3" onclick="radioClicked('optionLabel3')"  name="options">
+                    <label for="option3" id="optionLabel3">Option 3</label>
+                  </div>
+                  
+                  <div class="option">
+                    <input type="radio" id="option4" onclick="radioClicked('optionLabel4')"  name="options">
+                    <label for="option4" id="optionLabel4">Option 4</label>
+                  </div>
+                  
+            </div>
+
+            <div class="footer">
+                <!-- <div class="prevBackBtn">
+                    <p id="backBtn">Back</p>
+                </div> -->
+                <div class="prevBackBtn">
+                    <p id="nextBtn">Next</p>
+                </div>
+                
+            </div>
+        </div>
+        
+
+
+
+        <!-- For showing the score -->
+        <div class="questionCard" id="finalScore">
+            <p id="scoreParagraph"></p>
+            <p id="scoreEmoji"></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="index.js"></script>
+
+</html>
